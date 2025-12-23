@@ -34,12 +34,75 @@
 -- Data for Name: crews; Type: TABLE DATA; Schema: ops; Owner: -
 --
 
+INSERT INTO ops.crews (id, created_at, updated_at, public_id, name, description) VALUES (1, '2021-02-05 07:15:25.911+00', '2024-08-22 23:21:22.307+00', 'aea90ca9-73e6-4b5a-9e01-32fb7f1d7d25', 'Session Road Response Crew', 'Handles outage restoration and line checks around Session Road, CBD, and nearby barangays.');
+INSERT INTO ops.crews (id, created_at, updated_at, public_id, name, description) VALUES (2, '2014-01-02 12:32:08.567+00', '2020-09-14 17:39:39.622+00', '95addb0c-97a7-46e4-a27f-dae028c59b3f', 'Beneco South Drive Linemen', 'Focuses on primary and secondary lines along South Drive and adjoining residential areas.');
+INSERT INTO ops.crews (id, created_at, updated_at, public_id, name, description) VALUES (5, '2022-06-04 10:07:11.55+00', '2024-03-13 23:11:33.046+00', '2330d066-8ded-4e5b-8c8d-fc7a3a8ae36c', 'Bakakeng Field Services', 'Responds to customer outages and routine maintenance in Bakakeng North and Bakakeng Central.');
+INSERT INTO ops.crews (id, created_at, updated_at, public_id, name, description) VALUES (6, '2010-01-19 18:26:44.251+00', '2012-10-08 02:44:01.318+00', 'fd75266b-eac0-4d48-80cf-7778bb0abee8', 'Irisan Substation Crew', 'Handles substation operations, switching, and heavy equipment work in the Irisan area.');
+INSERT INTO ops.crews (id, created_at, updated_at, public_id, name, description) VALUES (7, '2013-09-22 09:00:13.713+00', '2019-11-27 16:33:24.387+00', '5b408313-855b-44ed-9fa8-ae5a895864c2', 'Mines View Overhead Lines', 'Focused on overhead distribution lines in Mines View Park, Gibraltar, and nearby high-elevation sites.');
+INSERT INTO ops.crews (id, created_at, updated_at, public_id, name, description) VALUES (8, '2011-10-14 16:13:52.942+00', '2018-10-22 14:36:20.682+00', '2e6a6a7e-5cec-4240-8c53-e93f739cbb09', 'Aurora Hill Sector Team', 'Manages routine inspections and minor repairs within Aurora Hill and adjacent barangays.');
+INSERT INTO ops.crews (id, created_at, updated_at, public_id, name, description) VALUES (3, '2024-10-03 14:37:35.162+00', '2024-10-03 14:37:35.162+00', 'ac9c152d-cc3b-4f37-bcd4-3ad1291dac61', 'Camp 7–Kennon Road Crew', 'Specializes in pole and line work along landslide-prone sections of Camp 7 and Kennon Road.');
+INSERT INTO ops.crews (id, created_at, updated_at, public_id, name, description) VALUES (4, '2020-05-01 13:17:44.372+00', '2020-05-01 13:17:44.372+00', '845431a5-a5e3-45ef-81c2-8f64b80b0693', 'Loakan–Airport Maintenance Team', 'Maintains feeders and transformers serving Loakan, airport facilities, and nearby industrial loads.');
+INSERT INTO ops.crews (id, created_at, updated_at, public_id, name, description) VALUES (9, '2021-03-24 04:06:49.407+00', '2021-03-24 04:06:49.407+00', '770dc24f-ed9a-417b-8c31-04a15482aeb9', 'Cordillera Safety & Testing Unit', 'Conducts system protection checks, meter testing, and safety audits across Baguio’s franchise area under BENECO.');
+INSERT INTO ops.crews (id, created_at, updated_at, public_id, name, description) VALUES (10, '2024-08-17 04:09:05.837+00', '2024-08-17 04:09:05.837+00', 'ff7c0ce1-d102-408d-b75a-bdb145241742', 'Baguio Emergency Restoration Team', '24/7 standby crew for city-wide major outages, typhoon damage, and landslide-related faults.');
 
 
 --
 -- Data for Name: assignments; Type: TABLE DATA; Schema: ops; Owner: -
 --
 
+
+
+--
+-- Data for Name: crew_members; Type: TABLE DATA; Schema: ops; Owner: -
+--
+
+INSERT INTO ops.crew_members (id, created_at, updated_at, crew_id, profile_id, joined_at) VALUES (1, '2025-12-23 04:47:53.347727+00', '2025-12-23 04:47:53.347727+00', 1, 1, '2015-08-02 03:36:17.885327+00');
+INSERT INTO ops.crew_members (id, created_at, updated_at, crew_id, profile_id, joined_at) VALUES (2, '2025-12-23 04:47:53.347727+00', '2025-12-23 04:47:53.347727+00', 1, 10, '2015-11-18 04:57:24.451727+00');
+INSERT INTO ops.crew_members (id, created_at, updated_at, crew_id, profile_id, joined_at) VALUES (3, '2025-12-23 04:47:53.347727+00', '2025-12-23 04:47:53.347727+00', 1, 11, '2015-09-19 18:27:41.558927+00');
+INSERT INTO ops.crew_members (id, created_at, updated_at, crew_id, profile_id, joined_at) VALUES (4, '2025-12-23 04:47:53.347727+00', '2025-12-23 04:47:53.347727+00', 1, 12, '2015-12-17 11:21:57.312527+00');
+INSERT INTO ops.crew_members (id, created_at, updated_at, crew_id, profile_id, joined_at) VALUES (5, '2025-12-23 04:47:53.347727+00', '2025-12-23 04:47:53.347727+00', 1, 13, '2015-11-05 19:31:45.581327+00');
+INSERT INTO ops.crew_members (id, created_at, updated_at, crew_id, profile_id, joined_at) VALUES (6, '2025-12-23 04:47:53.347727+00', '2025-12-23 04:47:53.347727+00', 2, 14, '2016-06-25 07:43:23.520527+00');
+INSERT INTO ops.crew_members (id, created_at, updated_at, crew_id, profile_id, joined_at) VALUES (7, '2025-12-23 04:47:53.347727+00', '2025-12-23 04:47:53.347727+00', 2, 15, '2016-09-17 16:05:37.594127+00');
+INSERT INTO ops.crew_members (id, created_at, updated_at, crew_id, profile_id, joined_at) VALUES (8, '2025-12-23 04:47:53.347727+00', '2025-12-23 04:47:53.347727+00', 2, 16, '2016-11-27 12:25:53.472527+00');
+INSERT INTO ops.crew_members (id, created_at, updated_at, crew_id, profile_id, joined_at) VALUES (9, '2025-12-23 04:47:53.347727+00', '2025-12-23 04:47:53.347727+00', 2, 17, '2016-09-19 00:38:26.275727+00');
+INSERT INTO ops.crew_members (id, created_at, updated_at, crew_id, profile_id, joined_at) VALUES (10, '2025-12-23 04:47:53.347727+00', '2025-12-23 04:47:53.347727+00', 2, 18, '2016-08-05 17:10:44.342927+00');
+INSERT INTO ops.crew_members (id, created_at, updated_at, crew_id, profile_id, joined_at) VALUES (11, '2025-12-23 04:47:53.347727+00', '2025-12-23 04:47:53.347727+00', 3, 19, '2017-12-14 22:06:25.286927+00');
+INSERT INTO ops.crew_members (id, created_at, updated_at, crew_id, profile_id, joined_at) VALUES (12, '2025-12-23 04:47:53.347727+00', '2025-12-23 04:47:53.347727+00', 3, 20, '2017-11-15 09:59:50.870927+00');
+INSERT INTO ops.crew_members (id, created_at, updated_at, crew_id, profile_id, joined_at) VALUES (13, '2025-12-23 04:47:53.347727+00', '2025-12-23 04:47:53.347727+00', 3, 21, '2017-10-08 16:55:55.546127+00');
+INSERT INTO ops.crew_members (id, created_at, updated_at, crew_id, profile_id, joined_at) VALUES (14, '2025-12-23 04:47:53.347727+00', '2025-12-23 04:47:53.347727+00', 3, 22, '2017-12-14 22:05:59.021327+00');
+INSERT INTO ops.crew_members (id, created_at, updated_at, crew_id, profile_id, joined_at) VALUES (15, '2025-12-23 04:47:53.347727+00', '2025-12-23 04:47:53.347727+00', 3, 23, '2017-07-12 14:00:48.787727+00');
+INSERT INTO ops.crew_members (id, created_at, updated_at, crew_id, profile_id, joined_at) VALUES (16, '2025-12-23 04:47:53.347727+00', '2025-12-23 04:47:53.347727+00', 4, 24, '2018-11-19 02:37:31.210127+00');
+INSERT INTO ops.crew_members (id, created_at, updated_at, crew_id, profile_id, joined_at) VALUES (17, '2025-12-23 04:47:53.347727+00', '2025-12-23 04:47:53.347727+00', 4, 25, '2018-12-22 05:00:27.619727+00');
+INSERT INTO ops.crew_members (id, created_at, updated_at, crew_id, profile_id, joined_at) VALUES (18, '2025-12-23 04:47:53.347727+00', '2025-12-23 04:47:53.347727+00', 4, 26, '2018-10-25 08:49:02.669327+00');
+INSERT INTO ops.crew_members (id, created_at, updated_at, crew_id, profile_id, joined_at) VALUES (19, '2025-12-23 04:47:53.347727+00', '2025-12-23 04:47:53.347727+00', 4, 27, '2018-12-09 22:41:10.118927+00');
+INSERT INTO ops.crew_members (id, created_at, updated_at, crew_id, profile_id, joined_at) VALUES (20, '2025-12-23 04:47:53.347727+00', '2025-12-23 04:47:53.347727+00', 4, 28, '2018-08-19 00:00:53.654927+00');
+INSERT INTO ops.crew_members (id, created_at, updated_at, crew_id, profile_id, joined_at) VALUES (21, '2025-12-23 04:47:53.347727+00', '2025-12-23 04:47:53.347727+00', 5, 29, '2019-10-29 08:19:52.896527+00');
+INSERT INTO ops.crew_members (id, created_at, updated_at, crew_id, profile_id, joined_at) VALUES (22, '2025-12-23 04:47:53.347727+00', '2025-12-23 04:47:53.347727+00', 5, 30, '2019-08-24 12:59:51.734927+00');
+INSERT INTO ops.crew_members (id, created_at, updated_at, crew_id, profile_id, joined_at) VALUES (23, '2025-12-23 04:47:53.347727+00', '2025-12-23 04:47:53.347727+00', 5, 31, '2019-10-06 00:20:18.067727+00');
+INSERT INTO ops.crew_members (id, created_at, updated_at, crew_id, profile_id, joined_at) VALUES (24, '2025-12-23 04:47:53.347727+00', '2025-12-23 04:47:53.347727+00', 5, 32, '2019-09-16 07:40:31.757327+00');
+INSERT INTO ops.crew_members (id, created_at, updated_at, crew_id, profile_id, joined_at) VALUES (25, '2025-12-23 04:47:53.347727+00', '2025-12-23 04:47:53.347727+00', 5, 33, '2019-12-06 09:19:41.779727+00');
+INSERT INTO ops.crew_members (id, created_at, updated_at, crew_id, profile_id, joined_at) VALUES (26, '2025-12-23 04:47:53.347727+00', '2025-12-23 04:47:53.347727+00', 6, 34, '2020-11-30 02:59:57.581327+00');
+INSERT INTO ops.crew_members (id, created_at, updated_at, crew_id, profile_id, joined_at) VALUES (27, '2025-12-23 04:47:53.347727+00', '2025-12-23 04:47:53.347727+00', 6, 35, '2020-07-10 16:48:19.440527+00');
+INSERT INTO ops.crew_members (id, created_at, updated_at, crew_id, profile_id, joined_at) VALUES (28, '2025-12-23 04:47:53.347727+00', '2025-12-23 04:47:53.347727+00', 6, 36, '2020-12-06 08:55:23.347727+00');
+INSERT INTO ops.crew_members (id, created_at, updated_at, crew_id, profile_id, joined_at) VALUES (29, '2025-12-23 04:47:53.347727+00', '2025-12-23 04:47:53.347727+00', 6, 37, '2020-08-27 10:17:51.907727+00');
+INSERT INTO ops.crew_members (id, created_at, updated_at, crew_id, profile_id, joined_at) VALUES (30, '2025-12-23 04:47:53.347727+00', '2025-12-23 04:47:53.347727+00', 6, 38, '2020-10-31 23:14:08.592527+00');
+INSERT INTO ops.crew_members (id, created_at, updated_at, crew_id, profile_id, joined_at) VALUES (31, '2025-12-23 04:47:53.347727+00', '2025-12-23 04:47:53.347727+00', 7, 39, '2021-10-03 16:49:49.728527+00');
+INSERT INTO ops.crew_members (id, created_at, updated_at, crew_id, profile_id, joined_at) VALUES (32, '2025-12-23 04:47:53.347727+00', '2025-12-23 04:47:53.347727+00', 7, 40, '2021-08-17 08:00:38.160527+00');
+INSERT INTO ops.crew_members (id, created_at, updated_at, crew_id, profile_id, joined_at) VALUES (33, '2025-12-23 04:47:53.347727+00', '2025-12-23 04:47:53.347727+00', 7, 41, '2021-09-16 15:56:28.608527+00');
+INSERT INTO ops.crew_members (id, created_at, updated_at, crew_id, profile_id, joined_at) VALUES (34, '2025-12-23 04:47:53.347727+00', '2025-12-23 04:47:53.347727+00', 7, 42, '2021-11-09 13:13:13.613327+00');
+INSERT INTO ops.crew_members (id, created_at, updated_at, crew_id, profile_id, joined_at) VALUES (35, '2025-12-23 04:47:53.347727+00', '2025-12-23 04:47:53.347727+00', 7, 43, '2021-07-19 05:06:22.550927+00');
+INSERT INTO ops.crew_members (id, created_at, updated_at, crew_id, profile_id, joined_at) VALUES (36, '2025-12-23 04:47:53.347727+00', '2025-12-23 04:47:53.347727+00', 8, 44, '2022-10-11 02:30:24.221327+00');
+INSERT INTO ops.crew_members (id, created_at, updated_at, crew_id, profile_id, joined_at) VALUES (37, '2025-12-23 04:47:53.347727+00', '2025-12-23 04:47:53.347727+00', 8, 45, '2022-07-02 18:48:15.264527+00');
+INSERT INTO ops.crew_members (id, created_at, updated_at, crew_id, profile_id, joined_at) VALUES (38, '2025-12-23 04:47:53.347727+00', '2025-12-23 04:47:53.347727+00', 8, 46, '2022-07-08 09:54:33.264527+00');
+INSERT INTO ops.crew_members (id, created_at, updated_at, crew_id, profile_id, joined_at) VALUES (39, '2025-12-23 04:47:53.347727+00', '2025-12-23 04:47:53.347727+00', 8, 47, '2022-07-13 20:40:34.291727+00');
+INSERT INTO ops.crew_members (id, created_at, updated_at, crew_id, profile_id, joined_at) VALUES (40, '2025-12-23 04:47:53.347727+00', '2025-12-23 04:47:53.347727+00', 8, 48, '2022-11-12 16:19:55.632527+00');
+INSERT INTO ops.crew_members (id, created_at, updated_at, crew_id, profile_id, joined_at) VALUES (41, '2025-12-23 04:47:53.347727+00', '2025-12-23 04:47:53.347727+00', 9, 49, '2023-07-18 20:01:40.973327+00');
+INSERT INTO ops.crew_members (id, created_at, updated_at, crew_id, profile_id, joined_at) VALUES (42, '2025-12-23 04:47:53.347727+00', '2025-12-23 04:47:53.347727+00', 9, 50, '2023-12-08 16:50:35.520527+00');
+INSERT INTO ops.crew_members (id, created_at, updated_at, crew_id, profile_id, joined_at) VALUES (43, '2025-12-23 04:47:53.347727+00', '2025-12-23 04:47:53.347727+00', 9, 51, '2023-10-28 07:33:09.907727+00');
+INSERT INTO ops.crew_members (id, created_at, updated_at, crew_id, profile_id, joined_at) VALUES (44, '2025-12-23 04:47:53.347727+00', '2025-12-23 04:47:53.347727+00', 9, 52, '2023-07-28 23:10:33.370127+00');
+INSERT INTO ops.crew_members (id, created_at, updated_at, crew_id, profile_id, joined_at) VALUES (45, '2025-12-23 04:47:53.347727+00', '2025-12-23 04:47:53.347727+00', 9, 53, '2023-09-01 09:03:44.208527+00');
+INSERT INTO ops.crew_members (id, created_at, updated_at, crew_id, profile_id, joined_at) VALUES (46, '2025-12-23 04:47:53.347727+00', '2025-12-23 04:47:53.347727+00', 10, 54, '2024-11-25 09:24:39.773327+00');
+INSERT INTO ops.crew_members (id, created_at, updated_at, crew_id, profile_id, joined_at) VALUES (47, '2025-12-23 04:47:53.347727+00', '2025-12-23 04:47:53.347727+00', 10, 55, '2024-10-23 04:09:51.782927+00');
 
 
 --
@@ -265,6 +328,7 @@ INSERT INTO ops.outage_reports (id, created_at, updated_at, public_id, location,
 INSERT INTO ops.outage_reports (id, created_at, updated_at, public_id, location, reported_by, linked_outage_id, description, image_url, status, barangay_id) VALUES (428, '2018-10-01 12:04:05.244+00', '2018-10-01 12:04:05.244+00', '7b47b464-8dcf-412f-a4b2-18c2a1cf5fb3', '0101000020E6100000B622D84EA8245E4028D765E9A4683040', 372, NULL, 'Series of micro-outages causing electronic clocks to reset.', NULL, 'unprocessed', 74);
 INSERT INTO ops.outage_reports (id, created_at, updated_at, public_id, location, reported_by, linked_outage_id, description, image_url, status, barangay_id) VALUES (430, '2016-05-30 07:35:17.203+00', '2016-05-30 07:35:17.203+00', '9e0cf118-9f73-489e-ae66-f53297f0ccae', '0101000020E61000000AAEA24ED5255E40D05ED25FC26B3040', 248, NULL, 'Outage has caused delays in scheduled operations.', NULL, 'unprocessed', 118);
 INSERT INTO ops.outage_reports (id, created_at, updated_at, public_id, location, reported_by, linked_outage_id, description, image_url, status, barangay_id) VALUES (434, '2023-05-13 00:49:04.899+00', '2023-05-13 00:49:04.899+00', '8e227522-d8a9-4f6f-ba2f-e3a4980fcde6', '0101000020E610000010F4509C72255E4020135FE3F6663040', 409, NULL, 'Voltage irregularities preceded the complete outage.', NULL, 'unprocessed', 78);
+INSERT INTO ops.outage_reports (id, created_at, updated_at, public_id, location, reported_by, linked_outage_id, description, image_url, status, barangay_id) VALUES (3566, '2019-09-30 12:20:09.403+00', '2019-09-30 12:20:09.403+00', '04f3866f-cf75-4731-8b2f-cdcee6911547', '0101000020E6100000F11B77231A275E4000297F9ED66A3040', 471, NULL, 'Power outage reported by residents.', NULL, 'unprocessed', 85);
 INSERT INTO ops.outage_reports (id, created_at, updated_at, public_id, location, reported_by, linked_outage_id, description, image_url, status, barangay_id) VALUES (436, '2024-06-20 09:37:42.8+00', '2024-06-20 09:37:42.8+00', '2ab078f0-46e3-462b-aa47-7a3a36d46869', '0101000020E61000002D566CF3C0255E40C07F6713916D3040', 417, NULL, 'Power outage during scheduled exam in school.', NULL, 'unprocessed', 47);
 INSERT INTO ops.outage_reports (id, created_at, updated_at, public_id, location, reported_by, linked_outage_id, description, image_url, status, barangay_id) VALUES (439, '2019-08-17 23:26:00.904+00', '2019-08-17 23:26:00.904+00', '05d6d58c-a809-4fe6-9606-ec1a15d9a04b', '0101000020E61000002863FAD0FE255E40681D474623663040', 382, NULL, 'Frequent trips of building main breaker due to grid issue.', NULL, 'unprocessed', 7);
 INSERT INTO ops.outage_reports (id, created_at, updated_at, public_id, location, reported_by, linked_outage_id, description, image_url, status, barangay_id) VALUES (440, '2025-09-23 18:30:55.479+00', '2025-09-23 18:30:55.479+00', '75a95684-cc02-4e44-ae74-dcd98cf210d1', '0101000020E6100000BA5754366E265E40D0CFA3D555673040', 364, NULL, 'Distribution line along highway appears damaged.', NULL, 'unprocessed', 56);
@@ -1805,7 +1869,6 @@ INSERT INTO ops.outage_reports (id, created_at, updated_at, public_id, location,
 INSERT INTO ops.outage_reports (id, created_at, updated_at, public_id, location, reported_by, linked_outage_id, description, image_url, status, barangay_id) VALUES (3560, '2024-03-14 16:08:33.226+00', '2024-03-14 16:08:33.226+00', '0ed0bcb4-01d8-4263-85db-e703c0c810ff', '0101000020E610000064C0827E85255E4048AB0BF919693040', 407, NULL, 'Voltage fluctuations causing aircon to shut off repeatedly.', NULL, 'unprocessed', 17);
 INSERT INTO ops.outage_reports (id, created_at, updated_at, public_id, location, reported_by, linked_outage_id, description, image_url, status, barangay_id) VALUES (3561, '2018-06-30 03:53:22.643+00', '2018-06-30 03:53:22.643+00', '3949eb87-0198-482f-9c66-c6e056f29437', '0101000020E6100000D1A09BB92B285E4030A23391DB643040', 44, NULL, 'Gate motor cannot operate due to ongoing blackout.', NULL, 'unprocessed', 6);
 INSERT INTO ops.outage_reports (id, created_at, updated_at, public_id, location, reported_by, linked_outage_id, description, image_url, status, barangay_id) VALUES (3565, '2019-09-20 07:54:14.349+00', '2019-09-20 07:54:14.349+00', 'c644e31d-7ab4-4c1e-8b65-9971bce8a9f6', '0101000020E6100000320CB468C1255E40C0C7A8BE75683040', 120, NULL, 'Power went out while linemen were working nearby.', NULL, 'unprocessed', 48);
-INSERT INTO ops.outage_reports (id, created_at, updated_at, public_id, location, reported_by, linked_outage_id, description, image_url, status, barangay_id) VALUES (3566, '2019-09-30 12:20:09.403+00', '2019-09-30 12:20:09.403+00', '04f3866f-cf75-4731-8b2f-cdcee6911547', '0101000020E6100000F11B77231A275E4000297F9ED66A3040', 471, NULL, 'Power outage reported by residents.', NULL, 'unprocessed', 85);
 INSERT INTO ops.outage_reports (id, created_at, updated_at, public_id, location, reported_by, linked_outage_id, description, image_url, status, barangay_id) VALUES (3567, '2018-10-18 01:10:16.649+00', '2018-10-18 01:10:16.649+00', '786df5bc-373b-4ff9-a898-0cfea2ded737', '0101000020E6100000E8E1DAC783265E40E853F53CC96B3040', 154, NULL, 'Residents heard explosion near substation before outage.', NULL, 'unprocessed', 11);
 INSERT INTO ops.outage_reports (id, created_at, updated_at, public_id, location, reported_by, linked_outage_id, description, image_url, status, barangay_id) VALUES (3568, '2012-12-28 18:39:35.543+00', '2012-12-28 18:39:35.543+00', '7d5350db-45e4-4fd1-a428-74664108929c', '0101000020E610000047786BF0EB265E40B8E401046A683040', 236, NULL, 'Power cut without explanation from utility so far.', NULL, 'unprocessed', 126);
 INSERT INTO ops.outage_reports (id, created_at, updated_at, public_id, location, reported_by, linked_outage_id, description, image_url, status, barangay_id) VALUES (3570, '2025-10-05 10:21:11.637+00', '2025-10-05 10:21:11.637+00', '9a56d570-42e3-43fc-a8e6-5baec98d37b0', '0101000020E6100000F07107B224255E401810434D62693040', 300, NULL, 'Loud bang heard from pole-mounted transformer.', NULL, 'unprocessed', 75);
@@ -4083,10 +4146,17 @@ SELECT pg_catalog.setval('ops.assignments_id_seq', 1, false);
 
 
 --
+-- Name: crew_members_id_seq; Type: SEQUENCE SET; Schema: ops; Owner: -
+--
+
+SELECT pg_catalog.setval('ops.crew_members_id_seq', 47, true);
+
+
+--
 -- Name: crews_id_seq; Type: SEQUENCE SET; Schema: ops; Owner: -
 --
 
-SELECT pg_catalog.setval('ops.crews_id_seq', 1, false);
+SELECT pg_catalog.setval('ops.crews_id_seq', 10, true);
 
 
 --
